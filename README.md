@@ -1,2 +1,2 @@
-# Mike\+\+
-A custom programming language with a C-style syntax.
+# Aleksandra
+A custom programming language with built for speed and simplicity.
