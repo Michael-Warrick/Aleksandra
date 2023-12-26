@@ -1,0 +1,17 @@
+#import StandardIO
+
+someText: String = "Hello, World";
+character: Character = 'M';
+wholeNumber: Integer = 5;
+floatingPointNumber: Float = 12.4f;
+
+Function showText(text: String) -> Void 
+{
+    print(text);
+}
+
+Function main() -> Integer 
+{
+    showText(someText);
+    return 0;
+}
