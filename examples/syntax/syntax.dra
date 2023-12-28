@@ -1,4 +1,5 @@
-#import StandardIO
+Import StandardIO
+Define SOME_VALUE 3.14
 
 someText: String = "Hello, World";
 character: Character = 'M';
@@ -7,11 +8,16 @@ floatingPointNumber: Float = 12.4f;
 
 Function showText(text: String) -> Void 
 {
+    If (text.length <= 0) 
+    {
+        // Handle error...
+    }
+
     print(text);
 }
 
 Function main() -> Integer 
 {
     showText(someText);
-    return 0;
+    Return 0;
 }

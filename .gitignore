@@ -1,0 +1,40 @@
+# C++ stuff
+# Prerequisites
+*.d
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Executables
+*.exe
+*.out
+*.app
+
+# CMake stuff
+CMakeLists.txt.user
+CMakeCache.txt
+CMakeFiles
+CMakeScripts
+Testing
+Makefile
+cmake_install.cmake
+install_manifest.txt
+compile_commands.json
+CTestTestfile.cmake
+_deps
+
+# Project specific stuff
+build/
+cmake-build-debug/
+cmake-build-release/
+[Bb][Uu][Ii][Ll][Dd]/
+
+# Secret Files
+.idea/
+.DS_Store

@@ -5,5 +5,12 @@ project(Aleksandra VERSION 0.0.1)
 set(CMAKE_CXX_STANDARD 20)
 
 add_executable(${PROJECT_NAME}
+
+    ${CMAKE_SOURCE_DIR}/src/fileLoader.hpp
+    ${CMAKE_SOURCE_DIR}/src/lexer.hpp
+
     ${CMAKE_SOURCE_DIR}/src/main.cpp
+
+    ${CMAKE_SOURCE_DIR}/src/fileLoader.cpp
+    ${CMAKE_SOURCE_DIR}/src/lexer.cpp
 )
