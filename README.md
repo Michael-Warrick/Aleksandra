@@ -1,5 +1,5 @@
 # Aleksandra
-A custom programming language with built for speed and simplicity.
+A custom programming language built for speed and simplicity.
 
 ## Usage
 ```shell
