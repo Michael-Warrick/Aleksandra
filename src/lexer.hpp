@@ -48,6 +48,8 @@ struct Token
         LogicalOr,
         LogicalExclusiveOr,
         LogicalNot,
+        ReturnTypeIndicator,
+        ScopeDelimiter,
         OPERATOR_COUNT
     };
 
@@ -75,7 +77,7 @@ struct Token
     };
 
     constexpr static const char *opperators[static_cast<size_t>(Operator::OPERATOR_COUNT)] = {
-        "", "+", "-", "*", "/", "%", "=", "==", "!=", "++", "--", "!", "<", "<=", ">", ">=", "&&", "||", "&", "|", "^", "~"
+        "", "+", "-", "*", "/", "%", "=", "==", "!=", "++", "--", "!", "<", "<=", ">", ">=", "&&", "||", "&", "|", "^", "~", "->", "::"
     };
 
     constexpr static const char *keywords[static_cast<size_t>(Keyword::KEYWORD_COUNT)] = {
@@ -120,6 +122,8 @@ private:
     bool isWhiteSpace(char character);
     bool isDigit(char character);
     bool isAlphaNumeric(char character);
+    bool isPunctuation(char character);
+    bool isBrace(char character);
 
     std::string sourceCode;
     std::vector<Token> tokens;
