@@ -1,8 +1,8 @@
 Import StandardIO;
 
-Function main() -> Integer 
+Function main() -> Integer
 {
     std::print("Hello, World!");
-
+    
     Return 0;
 }
